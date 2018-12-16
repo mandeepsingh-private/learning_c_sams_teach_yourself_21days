@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// program prints X 10columns X 10rows
 int x, y;
 
 int main(void)
@@ -9,7 +10,7 @@ int main(void)
         printf("\n");
         for (y = 0; y < 10; y++)
         {
-            printf("%c", 1);
+            printf("X");
         }
     }
     return 0;

@@ -1,3 +1,5 @@
+// Created by Mandeep Singh
+// prompts user for a radius and ouputs area of circle
 #include <stdio.h>
 int radius, area;
 int main(void)
