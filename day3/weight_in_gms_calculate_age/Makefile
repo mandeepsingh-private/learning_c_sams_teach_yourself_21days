@@ -1,7 +1,7 @@
 #make file - this is a comment section
 CC=gcc  #compiler for c
 TARGET=main#target file name
-FILE=main.c
+
 
 All:Test
 
@@ -13,4 +13,4 @@ Compile:
 
 # define test dependency on Compile to succeed
 Test: $(TARGET)
-	./$(TARGET) $(FILE)
+	./$(TARGET)

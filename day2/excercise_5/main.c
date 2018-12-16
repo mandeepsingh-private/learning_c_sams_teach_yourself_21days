@@ -1,4 +1,3 @@
-/* ex02-05.c */
 //Program prompts user to inout name
 // and counts number of characters in the name supplied by user
 #include <stdio.h>
