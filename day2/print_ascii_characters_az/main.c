@@ -1,4 +1,4 @@
-/* ex02-04.c */
+/* Created by Mandeep Singh Date: 12/26/2018 */
 #include <stdio.h>
 //This program prints ASCII charatcter of numbers represneted between 65 - 90
 int main(void)

@@ -1,4 +1,4 @@
-// Created by Mandeep Singh
+// Created by Mandeep Singh Date: 12/26/2018
 // prompts user for a radius and ouputs area of circle
 #include <stdio.h>
 int radius, area;

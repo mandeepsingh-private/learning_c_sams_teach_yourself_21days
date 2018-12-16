@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// program prints X 10columns X 10rows
+// program prints X 10 columns X 10rows
+/*Created by Mandeep Singh Date: 12/26/2018*/
 int x, y;
 
 int main(void)
