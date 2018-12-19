@@ -1,4 +1,3 @@
-/* sizeof.c—Program to tell the size of the C variable */
 /*Demo pre and post decrememt of unary operator*/
 
 #include <stdio.h>
