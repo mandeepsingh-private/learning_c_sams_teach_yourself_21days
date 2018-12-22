@@ -1,16 +1,16 @@
 #make file - this is a comment section
 CC=gcc  #compiler for c
 TARGET=main#target file name
-FILE=main.c
 
-All:Test
 
-Clean:
+all:run
+
+clean:
 	rm $(TARGET)
 
-Compile:
-	$(CC) -o $(TARGET) $(TARGET).cpp
+compile:
+	$(CC) -o $(TARGET) $(TARGET).c
 
 # define test dependency on Compile to succeed
-Test: $(TARGET)
-	./$(TARGET) $(FILE)
+run: $(TARGET)
+	./$(TARGET)

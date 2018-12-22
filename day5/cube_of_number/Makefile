@@ -3,14 +3,14 @@ CC=gcc  #compiler for c
 TARGET=main#target file name
 
 
-All:Test
+all:run
 
-Clean:
+clean:
 	rm $(TARGET)
 
-Compile:
-	$(CC) -o $(TARGET) $(TARGET).cpp
+compile:
+	$(CC) -o $(TARGET) $(TARGET).c
 
 # define test dependency on Compile to succeed
-Test: $(TARGET)
+run: $(TARGET)
 	./$(TARGET)
