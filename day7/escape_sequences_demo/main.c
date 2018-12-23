@@ -58,5 +58,7 @@ void print_report( void )
        printf( "\n\\a\t\tbell (alert)" );
        printf( "\n\\b\t\tbackspace" );
        printf( "\n\\f\t\tForm Feed" );
+       printf( "\n\\n\t\tNew Line" );
+       printf( "\n\\r\t\tcarriage return" );
        printf( "\n...\t\t...");
 }
