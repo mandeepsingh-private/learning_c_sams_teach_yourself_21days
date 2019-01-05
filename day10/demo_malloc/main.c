@@ -1,0 +1,43 @@
+/**
+ * C program to demonstrate malloc() and free() function.
+ malloc() allocates N bytes in memory and return pointer to allocated memory.
+ The returned pointer contains link/handle to the allocated memory. Using that
+ you can access the memory allocated.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+       int i, max;
+       int *ptr;
+
+       // Input maximum elements of array
+       printf("Enter total number of elements: ");
+       scanf("%d", &max);
+
+       // Allocate memory for 'max' integer elements
+       ptr = (int *) malloc(max * sizeof(int));
+
+       // If memory not allocated
+       if (ptr == NULL)
+       {
+              printf("Memory is not created!!!");
+              exit(0); // Exit from the program
+       }
+
+       // Input elements from user
+       printf("Enter %d elements: \n", max);
+       for (i = 0; i < max; i++)
+              scanf("%d", (ptr + i));
+
+       // Print all elements
+       printf("\nArray elements are:\n");
+       for (i = 0; i < max; i++)
+              printf("%d\n", *(ptr + i));
+
+       // Release allocated memory
+       free(ptr);
+
+       return 0;
+}
