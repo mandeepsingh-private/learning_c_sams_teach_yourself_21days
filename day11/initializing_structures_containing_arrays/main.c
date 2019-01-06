@@ -21,23 +21,14 @@ struct sale {
 
 //initialize the data
 //year 2018
-struct sale sales_year_2018[100] = {
-	//initialize record 1
-	{
-		{	"APPLE",
-			"George Adams"
-		},
-		"Semiconductors",
-		10000.00
+struct sale sales_year_2018 =
+//initialize record 1
+{
+	{	"APPLE",
+		"George Adams"
 	},
-	//record 2
-	{
-		{	"SAMSUNG",
-			"Mike Bodson"
-		},
-		"Semiconductors",
-		50000.00
-	}
+	"Semiconductors",
+	10000.00
 };
 
 //initialize the struct 2 data
@@ -66,15 +57,10 @@ int main() {
 	printf("------------------------------------------------------\n");
 	printf("year 2018 sales\n");
 	printf("------------------------------------------------------\n");
-	printf("Who was Customer? :%s\n", sales_year_2018[1].buyer.firm);
-	printf("What did he buy? :%s\n", sales_year_2018[1].item);
-	printf("How many? :%f\n", sales_year_2018[1].amount);
+	printf("Who was Customer? :%s\n", sales_year_2018.buyer.firm);
+	printf("What did he buy? :%s\n", sales_year_2018.item);
+	printf("How many? :%f\n", sales_year_2018.amount);
 
-	printf("------------------------------------------------------\n");
-	printf("year 2019 sales\n");
-	printf("------------------------------------------------------\n");
-	printf("Who was Customer? :%s\n", sales_year_2019[1].buyer.firm);
-	printf("What did he buy? :%s\n", sales_year_2019[1].item);
-	printf("How many? :%f\n", sales_year_2019[1].amount);
+
 	return 0;
 }
